@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" href="./src/styles/app.css">
+</head>
+
+<body>
+    <!-- <h2 id="questions-amount-title">vraagje</h2> -->
+
+    <div id="header-quiz">
+
+        <div class="opening-content">
+            <div classe="text-color" id="load">Loading...</div>
+            <p>Welkom op de Quiz van Tolunay</p>
+            <p>Zullen we eraan beginnen ?</p>
+
+            <div class="start-quiz"><button>Start Quiz</button></div>
+        </div>
+
+        <div class="setup">
+            <label for="category">Please select any category</label>
+                <select id="category"></select>
+            <label for="difficulty">Please select any difficulty</label>
+                <select id="difficulty"></select>
+            <div class="limit">
+            <label for="questions">Select How many questions</label>
+                <input type="text" id="questions"></input>
+            </div>
+        </div>
+    </div>
+
+    <div id="body-quiz" class="hide">
+        <section>
+            <div class="title">Developer Quiz</div>
+            <div value="0" max="15" id="timer"></div>
+        </section>
+
+        <section>
+            <div id="question-each">
+            </div>
+            <div id="answers">
+            </div>
+        </section>
+
+        <section>
+            <div class="index">
+                Vraag
+            </div>
+            <div id="all-quests">
+            </div>
+            <div class="all-buttons">
+            <div class="next-button">
+                <button id="next-btn">Volgende</button>
+            </div>
+            <div class="back-button">
+                <button id="back-btn">Terug</button>
+            </div>
+            <div class="stop-button">
+                <button id="stop-btn">Stop</button>
+            </div>
+        </div>
+        </section>
+
+    </div>
+    <div id="results">
+        <h2>Profficiat! U heeft de test met succes volbracht</h2>
+        <ul class="answers-list"></ul>
+        <div id="restart">
+            <button>Herstart de Quiz!</button>
+        </div>
+    </div>
+    <script type="module" src="./src/app.js"></script>
+</body>
+
+</html>
